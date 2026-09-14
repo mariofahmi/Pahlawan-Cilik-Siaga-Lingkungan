@@ -8,6 +8,7 @@ import { KomposTakakura } from './components/KomposTakakura';
 import { ChecklistHarian } from './components/ChecklistHarian';
 import { sounds } from './soundEffects';
 import { speechAssistant } from './speechAssistant';
+import { MF_LOGO_DATA_URL } from './assets/logoBase64';
 import { 
   LayoutDashboard, 
   Gamepad2, 
@@ -315,7 +316,7 @@ export const App: React.FC = () => {
           <div className="modal-card onboarding-card">
             <div className="onboarding-header">
               <div className="onboarding-logo-badge">
-                <img src="/logo-mf.png" alt="Logo Mario Fahmi" className="onboarding-mf-logo" />
+                <img src={MF_LOGO_DATA_URL} alt="Logo Mario Fahmi" className="onboarding-mf-logo" />
               </div>
               <h2 id="onboarding-modal-title" className="onboarding-title">
                 Pendaftaran Pahlawan Cilik
@@ -373,7 +374,7 @@ export const App: React.FC = () => {
       {/* Footer with Educational Citation */}
       <footer className="app-footer" id="app-footer">
         <div className="footer-inner">
-          <img src="/logo-mf.png" alt="Logo Mario Fahmi" className="footer-mf-logo" />
+          <img src={MF_LOGO_DATA_URL} alt="Logo Mario Fahmi" className="footer-mf-logo" />
           <p>
             🌱 <strong>Pahlawan Cilik Siaga Lingkungan</strong> • Perancang: <strong>Mario Fahmi Syahrial</strong> • Berdasarkan buku panduan:
             <em> "Dari Tempat Sampah ke Tabungan: Mengelola Sampah Rumah Tangga Menjadi Peluang Ekonomi"</em>

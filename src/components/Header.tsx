@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { Star, Award, User, Sparkles, Edit3, School, X, Volume2, VolumeX } from 'lucide-react';
 import { sounds } from '../soundEffects';
 import { speechAssistant } from '../speechAssistant';
+import { MF_LOGO_DATA_URL } from '../assets/logoBase64';
 
 const AVATAR_OPTIONS = [
   { emoji: '🦸', label: 'Pahlawan Cilik' },
@@ -79,7 +80,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Logo & Title */}
         <div className="brand-section">
           <div className="logo-badge mf-logo-badge" id="app-logo" title="Logo Resmi Mario Fahmi">
-            <img src="/logo-mf.png" alt="Logo Mario Fahmi" className="brand-mf-logo" />
+            <img src={MF_LOGO_DATA_URL} alt="Logo Mario Fahmi" className="brand-mf-logo" />
           </div>
           <div>
             <div className="badge-pill">
@@ -89,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({
               Pahlawan Cilik Siaga Lingkungan
             </h1>
             <p className="brand-subtitle">
-              <img src="/logo-mf.png" alt="MF Logo" className="author-tag-logo" />
+              <img src={MF_LOGO_DATA_URL} alt="MF Logo" className="author-tag-logo" />
               Perancang: <strong>Mario Fahmi Syahrial</strong>
             </p>
           </div>
@@ -222,7 +223,7 @@ export const Header: React.FC<HeaderProps> = ({
 
             {/* Official Creator & Innovation Badge */}
             <div className="modal-author-badge">
-              <img src="/logo-mf.png" alt="Logo Mario Fahmi" className="author-badge-logo" />
+              <img src={MF_LOGO_DATA_URL} alt="Logo Mario Fahmi" className="author-badge-logo" />
               <div>
                 <span className="author-badge-subtitle">Perancang Inovasi & Edukasi:</span>
                 <strong className="author-badge-title">Mario Fahmi Syahrial</strong>

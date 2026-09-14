@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { COMMODITY_PRICES, CommodityPrice, SOP_STEPS, TransactionRecord } from '../data/bankSampahData';
 import { sounds } from '../soundEffects';
 import { speechAssistant } from '../speechAssistant';
+import { MF_LOGO_DATA_URL } from '../assets/logoBase64';
 import { 
   Scale, 
   Wallet, 
@@ -482,7 +483,7 @@ export const BankSampahSimulasi: React.FC<BankSampahSimulasiProps> = ({
             <div className="passbook-compact-card">
               <div className="passbook-header-compact">
                 <div className="passbook-mf-brand">
-                  <img src="/logo-mf.png" alt="Logo MF" className="passbook-logo-mini" />
+                  <img src={MF_LOGO_DATA_URL} alt="Logo MF" className="passbook-logo-mini" />
                   <div>
                     <h4 className="passbook-main-title">Buku Tabungan Pahlawan Cilik</h4>
                     <span className="passbook-sub-meta">No. Rekening: <strong>PC-2026-042</strong></span>
@@ -705,7 +706,7 @@ export const BankSampahSimulasi: React.FC<BankSampahSimulasiProps> = ({
           <div className="modal-card receipt-modal-card">
             <div className="receipt-paper" id="printable-receipt">
               <div className="receipt-header">
-                <img src="/logo-mf.png" alt="Logo MF" className="receipt-mf-logo" />
+                <img src={MF_LOGO_DATA_URL} alt="Logo MF" className="receipt-mf-logo" />
                 <h4>BANK SAMPAH PAHLAWAN CILIK</h4>
                 <p>Unit Resmi Bank Sampah Sekolah • Mario Fahmi Syahrial</p>
                 <div className="receipt-divider-dashed" />

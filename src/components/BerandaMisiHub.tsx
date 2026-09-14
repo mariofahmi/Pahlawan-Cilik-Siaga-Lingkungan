@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppTab } from '../App';
 import { sounds } from '../soundEffects';
+import { MF_LOGO_DATA_URL } from '../assets/logoBase64';
 import { 
   Gamepad2, 
   Sprout, 
@@ -239,7 +240,7 @@ export const BerandaMisiHub: React.FC<BerandaMisiHubProps> = ({
       {/* Slim Educational Fact Callout Footer */}
       <section className="hub-curriculum-banner compact-curriculum">
         <div className="banner-icon-side mf-curriculum-badge" title="Logo Resmi Mario Fahmi">
-          <img src="/logo-mf.png" alt="Logo Mario Fahmi" className="curriculum-mf-logo" />
+          <img src={MF_LOGO_DATA_URL} alt="Logo Mario Fahmi" className="curriculum-mf-logo" />
         </div>
         <div className="banner-text-side">
           <h4>Landasan Kurikulum Edukasi 3R • Perancang: Mario Fahmi Syahrial</h4>

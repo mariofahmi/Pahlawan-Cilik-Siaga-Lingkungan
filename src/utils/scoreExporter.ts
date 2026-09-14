@@ -32,16 +32,7 @@ export function getLoadedLogoImage(): Promise<HTMLImageElement | null> {
       cachedLogoImg = img;
       resolve(img);
     };
-    img.onerror = () => {
-      // Fallback: try public URL
-      const fb = new Image();
-      fb.onload = () => {
-        cachedLogoImg = fb;
-        resolve(fb);
-      };
-      fb.onerror = () => resolve(null);
-      fb.src = '/logo-mf.png';
-    };
+    img.onerror = () => resolve(null);
     img.src = MF_LOGO_DATA_URL;
   });
 }

@@ -4,6 +4,7 @@ import { CHECKLIST_TASKS, DAYS_OF_WEEK } from '../data/checklistData';
 import { sounds } from '../soundEffects';
 import { speechAssistant } from '../speechAssistant';
 import { generateHabitEvaluation, HabitEvaluation } from '../utils/habitAdvisor';
+import { MF_LOGO_DATA_URL } from '../assets/logoBase64';
 import {
   CheckCircle2,
   HelpCircle,
@@ -257,7 +258,7 @@ export const ChecklistHarian: React.FC<ChecklistHarianProps> = ({ onAddPoints })
             <div className="result-card-header">
               <div className="result-header-badge-row">
                 <span className="result-author-tag">
-                  <img src="/logo-mf.png" alt="MF Logo" className="result-mf-mini" /> Panduan Mario Fahmi Syahrial
+                  <img src={MF_LOGO_DATA_URL} alt="MF Logo" className="result-mf-mini" /> Panduan Mario Fahmi Syahrial
                 </span>
                 <span className={`result-status-pill ${isDayConfirmed ? 'status-confirmed' : 'status-draft'}`}>
                   {isDayConfirmed ? '✓ Terkonfirmasi & Disimpan' : '⏳ Menunggu Konfirmasi'}
